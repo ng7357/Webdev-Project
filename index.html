@@ -1,0 +1,412 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Narendra Godara | Explore India</title>
+
+    <style>
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #fff8f0;
+            color: #333;
+        }
+
+
+        header {
+            background-color: #8b4513;
+            color: white;
+            text-align: center;
+            padding: 45px 20px;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 42px;
+        }
+
+        header p {
+            font-size: 18px;
+            margin-top: 10px;
+            color: #ffe0b2;
+        }
+
+
+        nav {
+            background-color: #5d2e0c;
+            padding: 15px;
+        }
+
+        nav ul {
+            padding: 0;
+            margin: 0;
+
+            display: flex;
+            justify-content: center;
+            gap: 35px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+            padding: 8px 12px;
+        }
+
+        nav a:hover {
+            background-color: #a0522d;
+            border-radius: 5px;
+        }
+
+
+        section {
+            max-width: 950px;
+            margin: 35px auto;
+            padding: 30px;
+
+            background-color: white;
+            border-radius: 10px;
+
+            box-shadow: 0 3px 12px orange;
+
+        }
+
+        section h2 {
+            color: #8b4513;
+            border-bottom: 2px solid #d2691e;
+            padding-bottom: 8px;
+        }
+
+
+        #home {
+            text-align: center;
+        }
+
+        #home img {
+            width: 100%;
+            max-width: 700px;
+            height: 300px;
+            border-radius: 10px;
+        }
+
+        .destination-container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+        }
+
+        .destination {
+            background-color: #fff3e0;
+            padding: 15px;
+            border-radius: 8px;
+        }
+
+        .destination img {
+            width: 100%;
+            height: 180px;
+            border-radius: 7px;
+        }
+
+        .destination h3 {
+            color: #a0522d;
+        }
+
+
+        .attraction-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        .attraction {
+            background-color: #ffe0b2;
+            padding: 15px 20px;
+            border-radius: 20px;
+        }
+
+
+        .tips li {
+            margin-bottom: 12px;
+        }
+
+
+        #contact a {
+            color: #a0522d;
+            text-decoration: none;
+            margin-right: 20px;
+        }
+
+        #contact a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            background-color: #5d2e0c;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+
+
+        @media (max-width: 700px) {
+
+            nav ul {
+                flex-wrap: wrap;
+                gap: 10px;
+            }
+
+            .destination-container {
+                grid-template-columns: 1fr;
+            }
+
+            section {
+                margin: 20px;
+            }
+
+            header h1 {
+                font-size: 32px;
+            }
+        }
+
+    </style>
+</head>
+
+
+<body>
+
+    <header>
+
+        <h1>Narendra Godara</h1>
+
+        <p>Explore India | Travel & Tourism</p>
+
+    </header>
+
+
+    <nav>
+
+        <ul>
+
+            <li>
+                <a href="#home">Home</a>
+            </li>
+
+            <li>
+                <a href="#destinations">Destinations</a>
+            </li>
+
+            <li>
+                <a href="#attractions">Attractions</a>
+            </li>
+
+            <li>
+                <a href="#tips">Travel Tips</a>
+            </li>
+
+            <li>
+                <a href="#contact">Contact</a>
+            </li>
+
+        </ul>
+
+    </nav>
+
+
+    <section id="home">
+
+        <h2>Welcome to India</h2>
+
+        <img
+        src="https://images.unsplash.com/photo-1524492412937-b28074a5d7da"
+        alt="Beautiful Indian destination">
+
+        <p>
+            India is a country full of beautiful landscapes,
+            historical places, colourful festivals and delicious food.
+        </p>
+
+        <p>
+            Explore this website to discover some of the most
+            interesting destinations and travel experiences in India.
+        </p>
+
+    </section>
+
+
+    <section id="destinations">
+
+        <h2>Popular Destinations</h2>
+
+        <div class="destination-container">
+
+
+            <div class="destination">
+
+                <img
+                src="https://images.unsplash.com/photo-1512343879784-a960bf40e7f2"
+                alt="Goa beach">
+
+                <h3>Goa</h3>
+
+                <p>
+                    Famous for its beautiful beaches, nightlife,
+                    Portuguese architecture and delicious food.
+                </p>
+
+            </div>
+
+
+            <div class="destination">
+
+                <img
+                src="https://images.unsplash.com/photo-1506744038136-46273834b3fb"
+                alt="Mountain landscape">
+
+                <h3>Manali</h3>
+
+                <p>
+                    A beautiful hill station surrounded by mountains,
+                    rivers and scenic landscapes.
+                </p>
+
+            </div>
+
+
+            <div class="destination">
+
+                <img
+                src="https://images.unsplash.com/photo-1548013146-72479768bada"
+                alt="Taj Mahal in India">
+
+                <h3>Agra</h3>
+
+                <p>
+                    Home to the famous Taj Mahal and many
+                    important historical monuments.
+                </p>
+
+            </div>
+
+
+            <div class="destination">
+
+                <img
+                src="https://images.unsplash.com/photo-1599661046289-e31897846e41"
+                alt="Jaipur historical architecture">
+
+                <h3>Jaipur</h3>
+
+                <p>
+                    Known for magnificent forts, palaces,
+                    traditional markets and rich culture.
+                </p>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+    <section id="attractions">
+
+        <h2>Top Attractions</h2>
+
+        <div class="attraction-list">
+
+            <div class="attraction">
+                🏖️ Beautiful Beaches
+            </div>
+
+            <div class="attraction">
+                🏔️ Snowy Mountains
+            </div>
+
+            <div class="attraction">
+                🏰 Historical Forts
+            </div>
+
+            <div class="attraction">
+                🛕 Ancient Temples
+            </div>
+
+            <div class="attraction">
+                🌊 Beautiful Lakes
+            </div>
+
+            <div class="attraction">
+                🌳 National Parks
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <section id="tips">
+
+        <h2>Travel Tips</h2>
+
+        <ul class="tips">
+
+            <li>Plan your trip and accommodation in advance.</li>
+
+            <li>Keep important documents and identification with you.</li>
+
+            <li>Check the weather before visiting a destination.</li>
+
+            <li>Carry enough water during sightseeing.</li>
+
+            <li>Respect local culture and traditions.</li>
+
+            <li>Keep tourist places clean and avoid littering.</li>
+
+        </ul>
+
+    </section>
+
+
+    <section id="contact">
+
+        <h2>Contact Us</h2>
+
+        <p>
+            Want to know more about travelling in India?
+            Feel free to contact us.
+        </p>
+
+        <p>
+            Email: narendragodara007@gmail.com
+        </p>
+
+        <p>
+
+            <a href="#">Instagram</a>
+
+            <a href="#">Facebook</a>
+
+            <a href="#">YouTube</a>
+
+        </p>
+
+    </section>
+
+
+    <footer>
+
+        <p>2026 Narendra Godara | Explore India</p>
+
+    </footer>
+
+
+</body>
+
+</html>
