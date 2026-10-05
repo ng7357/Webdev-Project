@@ -2,436 +2,397 @@
 <html lang="en">
 
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Narendra Godara | Explore India</title>
+    <title>Narendra Godara | Explore India</title>
 
-<style>
-body {
-margin:0;
-font-family: Arial, sans-serif;
-background-color: #f4f4f4;
-color: #333;
-}   
+    <style>
 
-
-  #topheader_thing {
-    background-color: brown;
-    color: white;
-    text-align: center;
-padding: 45px 20px;
-  }
-
-#topheader_thing h1 {
-    margin: 0;
-    font-size: 42px;
-}
-
-#topheader_thing p{
-    font-size: 18px;
-    margin-top: 10px;
-    color: lightgray;
-}
+    body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #fff8f0;
+            color: #333;
+         }   
 
 
-  #nav_bar_random {
-   background-color: #333;
-   padding: 15px;
-  }
+    header {
+            background-color: #8b4513;
+            color: white;
+            text-align: center;
+            padding: 45px 20px;
+        }
 
-#nav_bar_random ul {
-padding: 0;
-margin: 0;
-display: flex;
-    justify-content: space-around;
-  align-items: center;
- list-style: none;
-}
+    header h1 {
+            margin: 0;
+            font-size: 42px;
+         }
 
-  #nav_bar_random a {
-color: white;
-    text-decoration: none;
- font-size: 16px;
-    padding: 8px 12px;
-  }
-
- #nav_bar_random a:hover{
-    background-color: gray;
-    border-radius: 5px;
- }
+        header p {
+            font-size: 18px;
+            margin-top: 10px;
+            color: #ffe0b2;
+        }
 
 
-.main_sec_wrapper {
-max-width: 950px;
- margin: 35px auto;
-  padding: 30px;
- background-color: white;
- border-radius: 10px;
-   box-shadow: 0px 0px 10px #ccc;
-}
+     nav {
+            background-color: #5d2e0c;
+            padding: 15px;
+        }
 
-.main_sec_wrapper h2 {
- color: brown;
-border-bottom: 2px solid brown;
- padding-bottom: 8px;
-}
+        nav ul {
+            padding: 0;
+            margin: 0;
 
+            display: flex;
+            justify-content: center;
+            gap: 35px;
+        }
 
-  #hero_home_asdf {
-   text-align: center;
-  }
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+            padding: 8px 12px;
+        }
 
-  #hero_home_asdf img {
-width: 100%;
-max-width: 700px;
-    height: 300px;
-   border-radius: 10px;
-    object-fit: cover;
-  }
-
-/* flexbox layout for cards grid problem */
-   .cards_holder_v3 {
- display: flex;
-flex-wrap: wrap;
-    gap: 20px;
- justify-content: space-between;
-   }
-
- .card_box_xyz123 {
- background-color: #eee;
-  padding: 15px;
-  border-radius: 8px;
-   width: 45%; 
- display: flex;
-   flex-direction: column;
-   justify-content: space-between;
- }
-
-  .card_box_xyz123 img {
-    width: 100%;
-   height: 180px;
-   border-radius: 7px;
-   object-fit: cover;
-  }
-
-  .card_box_xyz123 h3 {
-   color: brown;
-      margin-top: 5px;
-  }
+        nav a:hover {
+            background-color: #a0522d;
+            border-radius: 5px;
+        }
 
 
- .tags_flex_div {
-    display: flex;
-  flex-wrap: wrap;
-     gap: 15px;
- align-items: center;
- }
+        section {
+            max-width: 950px;
+            margin: 35px auto;
+            padding: 30px;
 
-  .single_chip_thing {
-    background-color: #ddd;
-    padding: 10px 18px;
- border-radius: 20px;
-   font-weight: bold;
-  }
+            background-color: white;
+            border-radius: 10px;
+
+            box-shadow: 0 3px 12px orange;
+
+        }
+        section h2 {
+            color: #8b4513;
+            border-bottom: 2px solid #d2691e;
+            padding-bottom: 8px;
+        }
+        #home {
+            text-align: center;
+        }
+
+        #home img {
+            width: 100%;
+            max-width: 700px;
+            height: 300px;
+            border-radius: 10px;
+        }
+
+        .destination-container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+        }
+
+        .destination {
+            background-color: #fff3e0;
+            padding: 15px;
+            border-radius: 8px;
+        }
+
+        .destination img {
+            width: 100%;
+            height: 180px;
+            border-radius: 7px;
+        }
+
+        .destination h3 {
+            color: #a0522d;
+        }
+        .attraction-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+        .attraction {
+            background-color: #ffe0b2;
+            padding: 15px 20px;
+            border-radius: 20px;
+        }
+        .tips li {
+            margin-bottom: 12px;
+        }
+        #contact a {
+            color: #a0522d;
+            text-decoration: none;
+            margin-right: 20px;
+        }
+
+        #contact a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            background-color: #5d2e0c;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
 
 
-.tips_list_item li {
-margin-bottom: 12px;
-}
+        @media (max-width: 700px) {
 
+            nav ul {
+                flex-wrap: wrap;
+                gap: 10px;
+            }
 
-.contact_box_inner {
-display: flex;
-  flex-direction: column;
- gap: 15px;
-}
+            .destination-container {
+                grid-template-columns: 1fr;
+            }
 
-.social_links_temp {
-  display: flex;
-   gap: 15px;
-}
+         section {
+                margin: 20px;
+            }
 
-  .social_links_temp a {
- color: brown;
-    text-decoration: none;
-   background: #eee;
-  padding: 6px 12px;
-  border-radius: 4px;
-  }
+            header h1 {
+                font-size: 32px;
+            }
+        }
 
-  .social_links_temp a:hover {
-   background-color: #ddd;
-  }
-
-  #bottom_footer_text {
-   background-color: #333;
-    color: white;
-  text-align: center;
-   padding: 20px;
-  margin-top: 40px;
-  }
-
-
-@media (max-width: 700px) {
-
- #nav_bar_random ul {
-flex-direction: column;
-   gap: 10px;
- }
-
-  .card_box_xyz123 {
-   width: 100%;
-  }
-
-  .main_sec_wrapper {
-   margin: 20px;
-  }
-
-  #topheader_thing h1 {
- font-size: 32px;
-  }
-}
-
-</style>
+    </style>
 </head>
 
 
 <body>
 
-    <header id="topheader_thing">
+    <header>
 
-  <h1>Narendra Godara</h1>
+        <h1>Narendra Godara</h1>
 
-    <p>Explore India | Travel & Tourism</p>
+        <p>Explore India | Travel & Tourism</p>
 
- </header>
-
-
- <nav id="nav_bar_random">
-
-   <ul>
-
-   <li>
-        <a href="#hero_home_asdf">Home</a>
-  </li>
-
-   <li>
-<a href="#destinations_sec_id">Destinations</a>
-       </li>
-
-   <li>
-       <a href="#attractions_stuff">Attractions</a>
-      </li>
-
-    <li>
-   <a href="#tips_sec">Travel Tips</a>
-     </li>
-
-  <li>
-       <a href="#contact_page_me">Contact</a>
-    </li>
-
-    </ul>
-
- </nav>
+    </header>
 
 
-   <section class="main_sec_wrapper" id="hero_home_asdf">
+    <nav>
+
+        <ul>
+
+            <li>
+                <a href="#home">Home</a>
+            </li>
+
+            <li>
+                <a href="#destinations">Destinations</a>
+            </li>
+
+            <li>
+                <a href="#attractions">Attractions</a>
+            </li>
+
+            <li>
+                <a href="#tips">Travel Tips</a>
+            </li>
+
+            <li>
+                <a href="#contact">Contact</a>
+            </li>
+
+        </ul>
+
+    </nav>
+
+
+    <section id="home">
 
         <h2>Welcome to India</h2>
 
-   <img src="https://images.unsplash.com/photo-1524492412937-b28074a5d7da" alt="Beautiful Indian destination">
-
-        <p>
-            India is a country full of beautiful landscapes,
-          historical places, colourful festivals and delicious food.
-        </p>
+        <img
+        src="https://images.unsplash.com/photo-1524492412937-b28074a5d7da"
+        alt="Beautiful Indian destination">
 
      <p>
-         Explore this website to discover some of the most
-       interesting destinations and travel experiences in India.
-     </p>
+            India is a country full of beautiful landscapes,
+            historical places, colourful festivals and delicious food.
+        </p>
 
- </section>
+        <p>
+            Explore this website to discover some of the most
+            interesting destinations and travel experiences in India.
+        </p>
 
+    </section>
 
-   <section class="main_sec_wrapper" id="destinations_sec_id">
 
-  <h2>Popular Destinations</h2>
+    <section id="destinations">
 
-   <div class="cards_holder_v3">
+        <h2>Popular Destinations</h2>
 
+        <div class="destination-container">
 
-   <div class="card_box_xyz123">
 
-   <div>
-   <img src="https://images.unsplash.com/photo-1512343879784-a960bf40e7f2" alt="Goa beach">
+            <div class="destination">
 
-   <h3>Goa</h3>
+                <img
+                src="https://images.unsplash.com/photo-1512343879784-a960bf40e7f2"
+                alt="Goa beach">
 
-   <p>
-      Famous for its beautiful beaches, nightlife,
-    Portuguese architecture and delicious food.
-   </p>
-   </div>
+                <h3>Goa</h3>
 
-  <a href="#" style="color: brown; margin-top: 10px;">Read More</a>
+                <p>
+                    Famous for its beautiful beaches, nightlife,
+                    Portuguese architecture and delicious food.
+                </p>
 
-  </div>
+            </div>
 
 
-  <div class="card_box_xyz123">
+            <div class="destination">
 
-   <div>
-     <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb" alt="Mountain landscape">
+                <img
+                src="https://images.unsplash.com/photo-1506744038136-46273834b3fb"
+                alt="Mountain landscape">
 
-   <h3>Manali</h3>
+                <h3>Manali</h3>
 
-    <p>
-       A beautiful hill station surrounded by mountains,
-     rivers and scenic landscapes.
-    </p>
-   </div>
+                <p>
+                    A beautiful hill station surrounded by mountains,
+                    rivers and scenic landscapes.
+                </p>
 
-     <a href="#" style="color: brown; margin-top: 10px;">Read More</a>
+         </div>
 
-   </div>
+            <div class="destination">
 
+                <img
+                src="https://images.unsplash.com/photo-1548013146-72479768bada"
+                alt="Taj Mahal in India">
 
-    <div class="card_box_xyz123">
+                <h3>Agra</h3>
 
-   <div>
-   <img src="https://images.unsplash.com/photo-1548013146-72479768bada" alt="Taj Mahal in India">
+                <p>
+                    Home to the famous Taj Mahal and many
+                    important historical monuments.
+                </p>
 
-   <h3>Agra</h3>
+            </div>
 
-   <p>
-     Home to the famous Taj Mahal and many
-   important historical monuments.
-  </p>
-  </div>
 
-  <a href="#" style="color: brown; margin-top: 10px;">Read More</a>
+            <div class="destination">
 
-  </div>
+                <img
+                src="https://images.unsplash.com/photo-1599661046289-e31897846e41"
+                alt="Jaipur historical architecture">
 
+                <h3>Jaipur</h3>
 
-  <div class="card_box_xyz123">
+                <p>
+                    Known for magnificent forts, palaces,
+                    traditional markets and rich culture.
+                </p>
 
-  <div>
-  <img src="https://images.unsplash.com/photo-1599661046289-e31897846e41" alt="Jaipur historical architecture">
+            </div>
 
-    <h3>Jaipur</h3>
 
-   <p>
-     Known for magnificent forts, palaces,
-    traditional markets and rich culture.
-   </p>
-   </div>
+        </div>
 
-  <a href="#" style="color: brown; margin-top: 10px;">Read More</a>
+    </section>
 
-  </div>
 
+    <section id="attractions">
 
- </div>
+        <h2>Top Attractions</h2>
 
- </section>
+        <div class="attraction-list">
 
+            <div class="attraction">
+                🏖️ Beautiful Beaches
+            </div>
 
-   <section class="main_sec_wrapper" id="attractions_stuff">
+            <div class="attraction">
+                🏔️ Snowy Mountains
+            </div>
 
- <h2>Top Attractions</h2>
+            <div class="attraction">
+                🏰 Historical Forts
+            </div>
 
-   <div class="tags_flex_div">
+            <div class="attraction">
+                🛕 Ancient Temples
+            </div>
 
-   <div class="single_chip_thing">
-     🏖️ Beautiful Beaches
-  </div>
+            <div class="attraction">
+                🌊 Beautiful Lakes
+            </div>
 
-   <div class="single_chip_thing">
-     🏔️ Snowy Mountains
-  </div>
+            <div class="attraction">
+                🌳 National Parks
+            </div>
 
-   <div class="single_chip_thing">
-     🏰 Historical Forts
-  </div>
+        </div>
 
-  <div class="single_chip_thing">
-    🛕 Ancient Temples
-   </div>
+    </section>
 
-   <div class="single_chip_thing">
-     🌊 Beautiful Lakes
-  </div>
 
-  <div class="single_chip_thing">
-    🌳 National Parks
-  </div>
 
-  </div>
+    <section id="tips">
 
-  </section>
+        <h2>Travel Tips</h2>
 
+        <ul class="tips">
 
+            <li>Plan your trip and accommodation in advance.</li>
 
-  <section class="main_sec_wrapper" id="tips_sec">
+            <li>Keep important documents and identification with you.</li>
 
-  <h2>Travel Tips</h2>
+            <li>Check the weather before visiting a destination.</li>
 
-   <ul class="tips_list_item">
+            <li>Carry enough water during sightseeing.</li>
 
-  <li>Plan your trip and accommodation in advance.</li>
+            <li>Respect local culture and traditions.</li>
 
-  <li>Keep important documents and identification with you.</li>
+            <li>Keep tourist places clean and avoid littering.</li>
 
-    <li>Check the weather before visiting a destination.</li>
+        </ul>
 
-  <li>Carry enough water during sightseeing.</li>
+    </section>
 
-  <li>Respect local culture and traditions.</li>
 
-  <li>Keep tourist places clean and avoid littering.</li>
+    <section id="contact">
 
-  </ul>
+        <h2>Contact Us</h2>
 
-  </section>
+        <p>
+            Want to know more about travelling in India?
+            Feel free to contact us.
+        </p>
 
+        <p>
+            Email: narendragodara007@gmail.com
+        </p>
 
-  <section class="main_sec_wrapper" id="contact_page_me">
+        <p>
 
-  <h2>Contact Us</h2>
+            <a href="#">Instagram</a>
 
-  <div class="contact_box_inner">
-   <p>
-     Want to know more about travelling in India?
-     Feel free to contact us.
-   </p>
+            <a href="#">Facebook</a>
 
-   <p>
-    Email: narendragodara007@gmail.com
-   </p>
+            <a href="#">YouTube</a>
 
-   <div class="social_links_temp">
+        </p>
 
-   <a href="#">Instagram</a>
+    </section>
 
-  <a href="#">Facebook</a>
 
-   <a href="#">YouTube</a>
+    <footer>
 
-   </div>
-   </div>
+        <p>2026 Narendra Godara | Explore India</p>
 
- </section>
-
-
-  <footer id="bottom_footer_text">
-
-   <p>2026 Narendra Godara | Explore India</p>
-
-  </footer>
+    </footer>
 
 
 </body>
